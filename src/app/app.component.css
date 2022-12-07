@@ -1,9 +1,12 @@
 html,
 body {
-  height: 70%;
-  background: #8d8d25 !important;
+  height: 100%;
 }
 
 * {
   font-size: 1.5rem !important;
+}
+
+#page-content {
+  flex: 1 0 auto;
 }

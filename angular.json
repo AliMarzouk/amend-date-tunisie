@@ -106,6 +106,9 @@
               "./node_modules/bootstrap/dist/js/bootstrap.js"
             ]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }

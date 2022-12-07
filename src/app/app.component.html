@@ -1,5 +1,5 @@
-<div class="h-100 container">
-  <div class="row h-25 align-items-center justify-content-center">
+<div class=" container">
+  <div class="mt-5 row h-50 align-items-center justify-content-center">
     <div class="col-8 text-center">
       <h2 style="font-size: 2rem !important;">Entrez la référence de votre infraction <br>pour récupérer sa date </h2>
     </div>
@@ -11,12 +11,12 @@
         <input [(ngModel)]="reference" matInput placeholder="EX: SN221350AE040780">
       </mat-form-field>
     </div>
-    <div class="ps-1 col-1">
+    <div class="ps-1 col-auto">
       <button mat-raised-button color="primary" (click)="calculateDate()">Confirmer</button>
     </div>
   </div>
   <div *ngIf="showResult" class="row align-items-center justify-content-center">
-    <div class="col-6">
+    <div class="col-8">
       <div class="alert alert-info text-center" role="alert">
         {{date | date:'fullDate'}}
       </div>

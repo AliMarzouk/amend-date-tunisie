@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>RadarAmende</title>
+  <title>Mon Infraction</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -10,7 +10,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body class="mat-typography">
-  <app-root></app-root>
+<style>
+  html,
+  body {
+    height: 100%;
+  }
+
+  #page-content {
+    flex: 1 0 auto;
+  }
+</style>
+<body class="mat-typography d-flex flex-column">
+  <app-root id="page-content"></app-root>
+  <footer id="sticky-footer" class="flex-shrink-0 py-2 bg-light text-dark">
+    <div class="container text-center">
+      <img src="assets/github-svgrepo-com.svg" height="30px">
+      <a href="https://github.com/AliMarzouk/amend-date-tunisie" class="link-secondary">Star the repo</a>
+    </div>
+  </footer>
 </body>
 </html>
